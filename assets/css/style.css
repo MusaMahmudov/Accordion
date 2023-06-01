@@ -40,7 +40,7 @@ main {
   margin: 0px;
   padding-right: 0px;
 }
-.questions i {
+.questions button {
   transition: 0.5s;
 }
 .questions ul {
@@ -58,7 +58,8 @@ main {
   align-items: start;
   border-left: 4px solid black;
   position: relative;
-  height: 15px;
+  height: 20px;
+  transition: 0.2s;
 }
 .questions ul li:first-child {
   border-left: 4px solid rgba(255, 165, 0, 0.7);
@@ -95,5 +96,5 @@ main {
 }
 
 .hidden {
-  overflow: hidden;
+  display: none;
 }/*# sourceMappingURL=style.css.map */

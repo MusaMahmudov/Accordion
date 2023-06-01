@@ -1,33 +1,32 @@
 let buttons = document.getElementsByTagName("button");
 let answers = document.getElementsByClassName("answer");
 let icons = document.getElementsByTagName("i");
-console.log(icons);
+let liAll = document.getElementsByTagName("li");
+
 for (let index = 0; index < buttons.length; index++) {
   buttons[index].addEventListener("click", (event) => {
     let p = event.currentTarget.parentElement.querySelector(".answer");
-    let icon = event.target;
+    let button = event.currentTarget;
     let li = event.currentTarget.parentElement;
-    console.log(li);
     for (let i = 0; i < answers.length; i++) {
       if (!answers[i].classList.contains("hidden")) {
         if (answers[i] === p) {
           continue;
         }
-        icons[i].style.transform = "rotate(0deg)";
-
+        buttons[i].style.transform = "rotate(0deg)";
+        liAll[i].style.height = "20px";
         answers[i].classList.add("hidden");
       }
     }
 
-    if (li.classList.contains("hidden")) {
-      li.classList.remove("hidden");
+    if (p.classList.contains("hidden")) {
+      p.classList.remove("hidden");
+      button.style.transform = "rotate(45deg)";
       li.style.height = "80px";
-      icon.style.transform = "rotate(45deg)";
     } else {
-      li.style.height = "15px";
-
-      li.classList.add("hidden");
-      icon.style.transform = "rotate(0deg)";
+      li.style.height = "20px";
+      p.classList.add("hidden");
+      button.style.transform = "rotate(0deg)";
     }
   });
 }

@@ -5,7 +5,7 @@
     margin: 0px;
     padding-right: 0px;
   }
-  & i {
+  & button {
     transition: 0.5s;
   }
   ul {
@@ -22,8 +22,8 @@
       align-items: start;
       border-left: 4px solid black;
       position: relative;
-      height: 15px;
-
+      height: 20px;
+      transition: 0.2s;
       &:first-child {
         border-left: 4px solid rgba($color: orange, $alpha: 0.7);
         background: rgba($color: orange, $alpha: 0.2);
@@ -62,5 +62,5 @@
   }
 }
 .hidden {
-  overflow: hidden;
+  display: none;
 }
