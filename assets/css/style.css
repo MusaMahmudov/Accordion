@@ -1,1 +1,99 @@
-/*# sourceMappingURL=style.css.map */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.heading p {
+  width: 270px;
+  margin: 0px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+.heading h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.questions button {
+  border: 0px;
+  background: transparent;
+  margin: 0px;
+  padding-right: 0px;
+}
+.questions i {
+  transition: 0.5s;
+}
+.questions ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.questions ul li {
+  padding: 15px 15px;
+  font-size: 9px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+  border-left: 4px solid black;
+  position: relative;
+  height: 15px;
+}
+.questions ul li:first-child {
+  border-left: 4px solid rgba(255, 165, 0, 0.7);
+  background: rgba(255, 165, 0, 0.2);
+}
+.questions ul li:nth-child(2) {
+  border-left: 4px solid rgba(0, 0, 255, 0.7);
+  background: rgba(0, 0, 255, 0.2);
+}
+.questions ul li:nth-child(3) {
+  border-left: 4px solid rgba(15, 15, 141, 0.7);
+  background: rgba(15, 15, 141, 0.2);
+}
+.questions ul li:nth-child(4) {
+  border-left: 4px solid rgba(128, 0, 128, 0.7);
+  background: rgba(128, 0, 128, 0.2);
+}
+.questions ul li:last-child {
+  border-left: 4px solid rgba(0, 128, 0, 0.7);
+  background: rgba(0, 128, 0, 0.2);
+}
+.questions ul li .question {
+  width: 430px;
+}
+.questions ul li .question p {
+  font-size: 14px;
+  margin: 15px 0px;
+}
+.questions ul li h1 {
+  max-width: 420px;
+  margin: 0px;
+  margin-right: 7px;
+  opacity: 1;
+}
+
+.hidden {
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
