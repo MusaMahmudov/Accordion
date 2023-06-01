@@ -1,3 +1,5 @@
+@use "../../../utils/mixins.scss" as m;
+
 .questions {
   button {
     border: 0px;
@@ -13,7 +15,7 @@
     padding: 0px;
     list-style: none;
     & li {
-      padding: 15px 15px;
+      padding: 15px;
       font-size: 9px;
       margin-bottom: 20px;
       display: flex;
@@ -25,25 +27,20 @@
       height: 20px;
       transition: 0.2s;
       &:first-child {
-        border-left: 4px solid rgba($color: orange, $alpha: 0.7);
-        background: rgba($color: orange, $alpha: 0.2);
+        @include m.listStyle(orange);
       }
       &:nth-child(2) {
-        border-left: 4px solid rgba($color: blue, $alpha: 0.7);
-        background: rgba($color: blue, $alpha: 0.2);
+        @include m.listStyle(blue);
       }
       &:nth-child(3) {
-        border-left: 4px solid rgba($color: rgb(15, 15, 141), $alpha: 0.7);
-        background: rgba($color: rgb(15, 15, 141), $alpha: 0.2);
+        @include m.listStyle(rgb(15, 15, 141));
       }
       &:nth-child(4) {
-        border-left: 4px solid rgba($color: purple, $alpha: 0.7);
-        background: rgba($color: purple, $alpha: 0.2);
+        @include m.listStyle(purple);
       }
 
       &:last-child {
-        border-left: 4px solid rgba($color: green, $alpha: 0.7);
-        background: rgba($color: green, $alpha: 0.2);
+        @include m.listStyle(green);
       }
       & .question {
         width: 430px;

@@ -1,0 +1,4 @@
+@mixin listStyle($color) {
+  border-left: 4px solid rgba($color: $color, $alpha: 0.7);
+  background: rgba($color: $color, $alpha: 0.2);
+}
